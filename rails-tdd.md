@@ -43,4 +43,21 @@ https://rspec.info/
 
 `rspec` roda os testes do diretório
 
+Os arquivos de testes serão mantidos dentro do diretório `spec` e também precisam possuir o sufixo `_spec.rb`
+
+Um arquivo de teste inicia-se com o método `describe`, sinalizando que iremos descrever/"explicar" algo através de testes.
+
+Quando informado uma classe no describe, o rspec irá tentar localizar a classe no diretório
+```
+describe Class do
+  ...
+end
+```
+Não é necessário informar uma classe, pode ser uma string também
+```
+describe 'test one' do
+  ...
+end
+```
+
 ## Capybara
