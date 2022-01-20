@@ -60,4 +60,16 @@ describe 'test one' do
 end
 ```
 
+Dentro do `describe` podemos utilizar três métodos para escrever nossos testes, são eles: it, specify e example
+
+`it 'do something' do ... end`
+
+`specify 'do something' do ... end`
+
+`example 'do something' do ... end`
+
+Até a versão 2.11 do Rspec, era utilizado o método `expect` dentro dos teste para indicar o resultado esperado.
+
+A partir da versão 2.11 até atualmente, o método utilizado é o `expect`
+
 ## Capybara
