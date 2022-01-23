@@ -10,7 +10,6 @@ Em 1998 Kent Beck e Erich Gamma desenvolveram a biblioteca JUnit para testes uni
 Foi sendo percebido que ao desenvolver guiado a testes o design dos sistemas estavam melhorando.
 
 ### Fluxo TDD
-
 `Red-Green-Refact`
 
 - Primeiro passo(Red): Escreva um teste que falhe
@@ -35,6 +34,21 @@ Segundo a pirâmide de testes do Martin Flower, um sistema deve possuir mais tes
 1. UI (Acceptance Tests)
 2. Service (Integration Tests)
 3. Unit (Unit Tests) (Prioridade, base da pirâmide)
+
+### Premissas dos testes
+- Testes devem ser confiáveis
+- Testes devem ser fáceis de escrever
+- Restes devem ser fáceis de entender hoje e no futuro
+- Não estamos focados em velocidade
+
+### Padrão xUnit 4 fases
+1. Setup: Quando é colocado o SUT(System Under Test, o objeto sendo testado) no estado necessário para o teste;
+> `subject = described_class.new`
+2. Exercise: Quando acontece a interação com o SUT;
+>`result = subject.sum(5,5)`
+3. Verify: Quando é verificado o comportamento esperado;
+>`expect(result).to eq(10)`
+4. Teardown: Quando o sistema é colocado no estado em que ele estava antes do teste ser executado(Utilizando Rspec, isso ocorre automaticamente)
 
 ## RSpec
 https://rspec.info/
