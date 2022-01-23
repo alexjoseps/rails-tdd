@@ -50,6 +50,23 @@ Segundo a pirâmide de testes do Martin Flower, um sistema deve possuir mais tes
 >`expect(result).to eq(10)`
 4. Teardown: Quando o sistema é colocado no estado em que ele estava antes do teste ser executado(Utilizando Rspec, isso ocorre automaticamente)
 
+## BDD(Behaviour Driven Development)
+Desenvolvimento Guiado a Comportamento
+
+Criado em 2003 por Dan North devido a dificuldade de ensinar o TDD aos seus alunos, que ficavam com dúvida por onde começar, o que testar e como nomear os testes.
+
+O BDD nasceu como um modo de rever a nomenclatura do TDD e como se enxerga essa prática, hoje BDD é uma **abordagem de desenvolvimento de software**.
+
+Uma abordagem/método que te faz pensar em como usar seu código e a partir disso gerar uma documentação/especifícação do comportamento que seu código faz.
+
+A principal motivação do TDD não é testar o seu software, e sim especificá-lo com **exemplos de como usar o seu código** e deixar isso guiar o design do software.
+
+Teste == Comportamento
+
+Ferramentas: Cucumber, BDD Gem
+
+O BDD permite que o cliente participe/crie da especificação dos cenários.
+
 ## RSpec
 https://rspec.info/
 
