@@ -3,15 +3,23 @@ require_relative '../../lib/calculator'
 describe Calculator do
   subject = described_class.new
 
-  it 'sum of two positive numbers' do
-    result = subject.sum(5,5)
+  context '#sum' do
+    it 'with positive numbers' do
+      result = subject.sum(5,5)
+  
+      expect(result).to eq(10)
+    end
+  
+    example 'with negative and positive number' do
+      result = subject.sum(-10, 5)
+  
+      expect(result).to eq(-5)
+    end
 
-    expect(result).to eq(10)
-  end
+    specify 'with negative numbers' do 
+      result = subject.sum(-5, -10)
 
-  example 'sum of one positive number and other negative number' do
-    result = subject.sum(-10, 5)
-
-    expect(result).to eq(-5)
+      expect(result).to eq(-15)
+    end
   end
 end

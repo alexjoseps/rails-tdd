@@ -103,4 +103,16 @@ Até a versão 2.11 do Rspec, era utilizado o método `expect` dentro dos teste 
 
 A partir da versão 2.11 até atualmente, o método utilizado é o `expect`
 
+Link útil: https://www.betterspecs.org/
+
+Pensando em agrupar nossos testes, teve a ideia do comando `context`, ele serve para agruparmos testes que são referente a uma mesma função e/ou contexto no qual o teste ocorre.
+
+```
+context '#sum' do
+  it 'with positive numbers' do 
+    ...
+  end
+end
+```
+
 ## Capybara
