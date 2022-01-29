@@ -99,6 +99,12 @@ describe 'test one' do
   ...
 end
 ```
+Podemos também passar para o `describe` tanto a classe como um texto:
+```
+describe Calculator, "Testes sobre calculadora" do 
+  ...
+end
+```
 
 ### it, specity and example
 Dentro do `describe` podemos utilizar três métodos para escrever nossos testes, são eles: it, specify e example
@@ -127,7 +133,7 @@ end
 ```
 
 ### subject
-Dentro do `describe`, quando passamos uma classe para ele, é possível fazer uso do método `subject` que irá instanciar um objeto da classe informada:
+Dentro do `describe`, quando passamos uma classe para ele, é possível fazer uso do método `subject` que irá instanciar um objeto da classe informada(implícito):
 ```
 describe Calculator do
   # Calculator.new
@@ -140,7 +146,7 @@ Para renomear o subject:
 
 `subject(:calc) { described_class.new }`
 
-Nos casos onde passamos para o `describe` um texto, também podemos definir nosso subject:
+Nos casos onde passamos para o `describe` um texto, também podemos definir nosso subject(explícito):
 ```
 describe "Calculadora" do 
   subject { Calculator.new }

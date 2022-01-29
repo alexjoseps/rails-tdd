@@ -1,6 +1,6 @@
 require_relative '../../lib/calculator'
 
-describe Calculator do
+describe Calculator, "Testes sobre a calculadora" do
   context '#sum' do
     xit 'with positive numbers' do
       result = subject.sum(5,5)
