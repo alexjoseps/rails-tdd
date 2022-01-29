@@ -118,4 +118,26 @@ context '#sum' do
 end
 ```
 
+### subject
+Dentro do `describe`, quando passamos uma classe para ele, é possível fazer uso do método `subject` que irá instanciar um objeto da classe informada:
+```
+describe Calculator do
+  # Calculator.new
+  subject
+  ...
+end
+```
+
+Para renomear o subject:
+
+`subject(:calc) { described_class.new }`
+
+Nos casos onde passamos para o `describe` um texto, também podemos definir nosso subject:
+```
+describe "Calculadora" do 
+  subject { Calculator.new }
+  ...
+end
+```
+
 ## Capybara

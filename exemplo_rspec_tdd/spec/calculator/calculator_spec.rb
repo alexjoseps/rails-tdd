@@ -1,8 +1,6 @@
 require_relative '../../lib/calculator'
 
 describe Calculator do
-  subject = described_class.new
-
   context '#sum' do
     it 'with positive numbers' do
       result = subject.sum(5,5)
