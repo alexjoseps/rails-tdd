@@ -162,4 +162,16 @@ xit "wip test" do
 end
 ```
 
+### expectations
+`expect().to ...` 
+
+`expect().to_not ...`
+
+### matchers igualdade
+- equal
+- eql
+- eq
+- be
+
+
 ## Capybara
