@@ -2,7 +2,7 @@ require_relative '../../lib/calculator'
 
 describe Calculator do
   context '#sum' do
-    it 'with positive numbers' do
+    xit 'with positive numbers' do
       result = subject.sum(5,5)
   
       expect(result).to eq(10)

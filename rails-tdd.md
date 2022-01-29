@@ -70,9 +70,17 @@ O BDD permite que o cliente participe/crie da especificação dos cenários.
 ## RSpec
 https://rspec.info/
 
-`rspec --init` inicializa os arquivos padrões do rspec
+`rspec --init` inicializa os arquivos padrões do rspec.
 
-`rspec` roda os testes do diretório
+`rspec` roda os testes do diretório.
+
+`rspec /folder`executa todos os testes dentro da pasta.
+
+`rspec /folder/test_spec.rb` executa determinado arquivo de teste.
+
+`rspec /folder/test_spec.rb -e "teste"` executa o teste informado do arquivo, pelo nome.
+
+`rspec /folder/test_spec.rb:10` executa o teste da linha informada.
 
 Os arquivos de testes serão mantidos dentro do diretório `spec` e também precisam possuir o sufixo `_spec.rb`
 
@@ -136,6 +144,14 @@ Nos casos onde passamos para o `describe` um texto, também podemos definir noss
 ```
 describe "Calculadora" do 
   subject { Calculator.new }
+  ...
+end
+```
+
+### xit
+Podemos usar o método `xit` no lugar do `it` nos testes para tornar um teste pendente, fazendo com que o rspec ignore ele.
+```
+xit "wip test" do
   ...
 end
 ```
