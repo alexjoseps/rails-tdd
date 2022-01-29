@@ -76,6 +76,7 @@ https://rspec.info/
 
 Os arquivos de testes serão mantidos dentro do diretório `spec` e também precisam possuir o sufixo `_spec.rb`
 
+### describe
 Um arquivo de teste inicia-se com o método `describe`, sinalizando que iremos descrever/"explicar" algo através de testes.
 
 Quando informado uma classe no describe, o rspec irá tentar localizar a classe no diretório
@@ -91,6 +92,7 @@ describe 'test one' do
 end
 ```
 
+### it, specity and example
 Dentro do `describe` podemos utilizar três métodos para escrever nossos testes, são eles: it, specify e example
 
 `it 'do something' do ... end`
@@ -105,6 +107,7 @@ A partir da versão 2.11 até atualmente, o método utilizado é o `expect`
 
 Link útil: https://www.betterspecs.org/
 
+### context
 Pensando em agrupar nossos testes, teve a ideia do comando `context`, ele serve para agruparmos testes que são referente a uma mesma função e/ou contexto no qual o teste ocorre.
 
 ```
