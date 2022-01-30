@@ -1,4 +1,4 @@
-describe "Matchers de comparação" do
+describe "Matchers de igualdade" do
   it "#equal and #be" do
     x = "ruby"
     y = x
