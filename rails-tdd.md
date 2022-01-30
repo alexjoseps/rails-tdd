@@ -168,10 +168,15 @@ end
 `expect().to_not ...`
 
 ### matchers igualdade
-- equal
-- eql
-- eq
-- be
+#### equal / be
+Compara o objeto instanciado em si, não o valor
+
+`expect(calc).to equal(calc)`
+
+#### eql / eq
+Compara o valor que o objeto instanciado possui
+
+`expect(result).to eq("ruby")`
 
 
 ## Capybara
