@@ -179,4 +179,22 @@ Compara o valor que o objeto instanciado possui
 `expect(result).to eq("ruby")`
 
 
+### matchers true/false
+#### be true / be_truthy
+Validar que o valor esperado é verdadeiro
+```
+expect(1.odd?).to be true
+expect(1.odd?).to be_truthy
+``` 
+#### be false / be_falsey
+Validar que o valor esperado é falso
+```
+expect(1.even?).to be false
+expect(1.even?).to be_falsey
+```
+#### be_nil
+Validar que o valor esperado é nulo
+
+`expect(nome).to be_nil`
+
 ## Capybara
