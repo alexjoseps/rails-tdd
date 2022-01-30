@@ -197,4 +197,38 @@ Validar que o valor esperado é nulo
 
 `expect(nome).to be_nil`
 
+### matchers comparação
+Utilizamos o matcher `be` para fazer comparações
+
+#### maior(>)
+`expect(result).to be > 5`
+
+#### maior igual(>=)
+`expect(5).to be >= 5`
+
+#### menor(<)
+`expect(5).to be < 10`
+
+#### menor igual(<=)
+`expect(10).to be <= 10`
+
+#### entre(be_between)(inclusive/exclusive)
+`expect(10).to be_between(5, 10).inclusive`  
+`expect(9).to be_between(5, 10).exclusive`
+
+#### match(/regex/)
+`expect(email).to match(/.@./)`
+
+#### começa com(start_with)
+Pode ser utilizado com texto e arrays
+
+`expect(numbers).to start_with 1`  
+`expect(name).to start_with "Alex"`
+
+#### termina com(end_with)
+Pode ser utilizado com textos e arrays
+
+`expect(numbers).to end_with 3`  
+`expect(name).to end_with "Teste"`
+
 ## Capybara
