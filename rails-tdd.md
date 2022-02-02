@@ -231,4 +231,19 @@ Pode ser utilizado com textos e arrays
 `expect(numbers).to end_with 3`  
 `expect(name).to end_with "Teste"`
 
+### matchers classes/objetos
+#### be_instance_of
+Compara se o objeto é instância direta de determinada classe  
+`expect(name).to be_instance_of String`
+
+#### be_kind_of / be_a / be_an
+Compara se o objeto é instância direta de determinada classe ou se o objeto pertence a uma classe que herda da classe informada.  
+Class Texto < String  
+`expect(texto).to be_kind_of Texto`  
+`expect(texto).to be_kind_of String`
+
+#### respond_to
+Verifica se o objeto informado possui determinado método diretamente ou indiretamente
+`expect(name).to respond_to(:size)`
+
 ## Capybara
