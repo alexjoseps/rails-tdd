@@ -251,4 +251,11 @@ Verifica se o objeto informado possui determinado método diretamente ou indiret
 Valida se a instância possui o atributo e valor informado
 `expect(person).to have_attributes(:name, age: 20)`
 
+### matchers predicados
+.nil? => be_nil
+.even? => be_even
+
+Podemos usar métodos predicados do Ruby no Rspec
+`expect(10).to be_even`
+
 ## Capybara
