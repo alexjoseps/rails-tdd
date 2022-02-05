@@ -219,13 +219,13 @@ Utilizamos o matcher `be` para fazer comparações
 #### match(/regex/)
 `expect(email).to match(/.@./)`
 
-#### começa com(start_with)
+#### começa com(start_with/starting_with)
 Pode ser utilizado com texto e arrays
 
 `expect(numbers).to start_with 1`  
 `expect(name).to start_with "Alex"`
 
-#### termina com(end_with)
+#### termina com(end_with/ending_with)
 Pode ser utilizado com textos e arrays
 
 `expect(numbers).to end_with 3`  
@@ -245,5 +245,10 @@ Class Texto < String
 #### respond_to
 Verifica se o objeto informado possui determinado método diretamente ou indiretamente
 `expect(name).to respond_to(:size)`
+
+### matchers atributos da classe/instância
+#### have_attributes
+Valida se a instância possui o atributo e valor informado
+`expect(person).to have_attributes(:name, age: 20)`
 
 ## Capybara
