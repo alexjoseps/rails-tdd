@@ -258,4 +258,21 @@ Valida se a instância possui o atributo e valor informado
 Podemos usar métodos predicados do Ruby no Rspec
 `expect(10).to be_even`
 
+### matchers para exceções
+Para capturar erros/exceções, precisamos utilizar o expect da seguinte forma:  
+`expect{subject}.to ...`  
+Passando para ele, entre chaves, a ação que irá gerar o erro.
+
+#### raise_exception
+Apena valida se a ação gerou uma exceção, sem especificar qual.
+`expect{subject}.to raise_exception`
+
+#### raise_error
+Com esse, podemos validar a classe da exceção e a mensagem.
+`expect{subject}.to raise_error(ZeroDivisionError)`  
+`expect{subject}.to raise_error("divided by 0")`  
+`expect{subject}.to raise_error(ZeroDivisionError, "divided by 0")`  
+`expect{subject}.to raise_error(/divided/)`
+
+####
 ## Capybara
