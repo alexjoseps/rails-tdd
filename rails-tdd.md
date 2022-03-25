@@ -291,4 +291,9 @@ Alias do include
 Verifica se o subject é exatamente igual o array informado
 `expect(subject).to match_array([1,2,3])`
 
+### matchers para ranges
+#### cover
+Verificar se um ou mais valores estão no range(subject)
+`expect(subject).to cover(2,4)`
+
 ## Capybara
