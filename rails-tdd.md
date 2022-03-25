@@ -274,5 +274,9 @@ Com esse, podemos validar a classe da exceção e a mensagem.
 `expect{subject}.to raise_error(ZeroDivisionError, "divided by 0")`  
 `expect{subject}.to raise_error(/divided/)`
 
-####
+### describe
+Podemos iniciar um arquivo utilizando somente o `describe` ou `RSpec.describe`
+
+Também podemos passar para o describe uma string que será interpretada como subject, no lugar de uma classe.
+
 ## Capybara
