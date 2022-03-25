@@ -279,4 +279,16 @@ Podemos iniciar um arquivo utilizando somente o `describe` ou `RSpec.describe`
 
 Também podemos passar para o describe uma string que será interpretada como subject, no lugar de uma classe.
 
+### matchers para arrays
+#### include
+Verifica se os valores informados estão presentes no subject
+`expect(subject).to include(1,2)`
+
+#### contain_exactly
+Alias do include
+
+#### match_array
+Verifica se o subject é exatamente igual o array informado
+`expect(subject).to match_array([1,2,3])`
+
 ## Capybara
