@@ -296,4 +296,13 @@ Verifica se o subject é exatamente igual o array informado
 Verificar se um ou mais valores estão no range(subject)
 `expect(subject).to cover(2,4)`
 
+### one-line syntax
+#### is_expected
+Utiliza a premissa de testar o subject do teste, não precisando passar o subject.
+`is_expected.to cover(5)`
+
+Combinado com o `it { ... }` se torna muito eficaz e ajuda na verbosidade do teste no log, colocando automaticamente `should + matcher`
+
+`it { is_expected.to cover(5) }`
+`it { expected(subject).to cover(5) }`
 ## Capybara
