@@ -311,4 +311,10 @@ Podemos compor matchers no expect adicionando `.and` ou `.or` após o matcher
 
 `it { is_expected.to start_with('a').and end_with('b') }`
 `it { is_expected.to eq(1).or eq(2) }`
+
+### matchers para collections
+Com o all, podemos validar todos os itens da coleção
+
+`it { is_expected.to all(be_odd)`
+
 ## Capybara
