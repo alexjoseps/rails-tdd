@@ -305,4 +305,10 @@ Combinado com o `it { ... }` se torna muito eficaz e ajuda na verbosidade do tes
 
 `it { is_expected.to cover(5) }`
 `it { expected(subject).to cover(5) }`
+
+### compositions
+Podemos compor matchers no expect adicionando `.and` ou `.or` após o matcher
+
+`it { is_expected.to start_with('a').and end_with('b') }`
+`it { is_expected.to eq(1).or eq(2) }`
 ## Capybara
