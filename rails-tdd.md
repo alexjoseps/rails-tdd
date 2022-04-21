@@ -317,4 +317,11 @@ Com o all, podemos validar todos os itens da coleção
 
 `it { is_expected.to all(be_odd)`
 
+### be_within
+Matcher para valores ponto flutante, com ele podemos dizer que esperamos uma diferença X a partir de um valor Y.
+
+`it { expect(12.5).to be_within(0.5).of(12) }`
+
+Com isso, o resultado será válido caso esteja entre 11.5 até 12.5
+
 ## Capybara
