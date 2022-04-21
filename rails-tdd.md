@@ -324,4 +324,10 @@ Matcher para valores ponto flutante, com ele podemos dizer que esperamos uma dif
 
 Com isso, o resultado será válido caso esteja entre 11.5 até 12.5
 
+### matcher satisfy
+Utilizamos o satisfy para validações mais específicas ou complexas que outro matcher não consiga oferecer.
+
+`it { expect(2).to satisfy { |e| e % 2 == 0 } }`
+`it { expect(2).to satisfy('be even') { |e| e % 2 == 0 } }`
+
 ## Capybara
