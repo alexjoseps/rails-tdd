@@ -20,6 +20,16 @@ RSpec.configure do |config|
   # Helper module included
   config.include Helper
 
+  # Before hook
+  config.before(:suite) do
+    puts '# ANTES de executar todos os testes'
+  end
+
+  # After hook
+  config.after(:suite) do
+    puts '# DEPOIS de executar todos os testes'
+  end
+
   config.formatter = 'documentation'
 
   # rspec-expectations config goes here. You can use an alternate

@@ -339,5 +339,30 @@ Qualquer método `def ... ` que seja criado dentro do spec para auxiliar nos tes
 
 Um arquivo `module ... ` que possui um ou mais métodos para auxiliar nos testes, podem ser utilizados nos teste após serem incluídos/importados no `RSpec.configure`
 
+### Before hook
+
+Executar determinada ação antes dos testes
+
+`before(:suite)` -> Antes de todos os testes do spec
+`before(:all)` ou `before(:context)` -> Antes de todo contexto/conjunto de testes
+`before(:each)` ou `before(:example)` -> Antes de cada teste
+
+```
+before do
+end
+```
+
+### After hook
+
+Executar determinada ação depois dos testes
+
+`after(:suite)` -> Depois de todos os testes do spec
+`after(:all)` ou `after(:context)` -> Depois de todo contexto/conjunto de testes
+`after(:each)` ou `after(:example)` -> Depois de cada teste
+
+```
+after do
+end
+```
 
 ## Capybara

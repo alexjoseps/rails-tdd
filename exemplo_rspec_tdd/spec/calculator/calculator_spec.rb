@@ -1,7 +1,23 @@
 require_relative '../../lib/calculator'
 
 describe Calculator, "Testes sobre a calculadora" do
-  context '#sum' do
+  before(:all) do
+    puts 'ANTES de executar os todos os testes'
+  end
+
+  after(:all) do
+    puts 'DEPOIS de executar os todos os testes'
+  end
+
+  before(:each) do
+    puts 'ANTES de executar cada teste'
+  end
+
+  after(:each) do
+    puts 'DEPOIS de executar cada teste'
+  end
+
+  describe '#sum' do
     xit 'with positive numbers' do
       result = subject.sum(5,5)
   
@@ -21,7 +37,7 @@ describe Calculator, "Testes sobre a calculadora" do
     end
   end
 
-  context '#divide' do
+  describe '#divide' do
     it 'with positive numbers' do
       result = subject.divide(10, 5)
 
