@@ -330,4 +330,14 @@ Utilizamos o satisfy para validações mais específicas ou complexas que outro 
 `it { expect(2).to satisfy { |e| e % 2 == 0 } }`
 `it { expect(2).to satisfy('be even') { |e| e % 2 == 0 } }`
 
+
+### helper method arbitrário
+
+Qualquer método `def ... ` que seja criado dentro do spec para auxiliar nos testes.
+
+### helper module
+
+Um arquivo `module ... ` que possui um ou mais métodos para auxiliar nos testes, podem ser utilizados nos teste após serem incluídos/importados no `RSpec.configure`
+
+
 ## Capybara

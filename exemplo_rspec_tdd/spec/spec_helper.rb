@@ -13,7 +13,13 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require_relative '../helpers/helper'
+
 RSpec.configure do |config|
+  # Helper module included
+  config.include Helper
+
   config.formatter = 'documentation'
 
   # rspec-expectations config goes here. You can use an alternate
